@@ -19,6 +19,9 @@ class Square():
         for key, value in kwargs.items():
             setattr(self, key, value)
 
+        if self.width < 0 or self.height < 0:
+            raise ValueError("Width and height must be non-negative.")
+
         if self.width:  # set height to width
             self.height = self.width
         else:  # or set width to height
