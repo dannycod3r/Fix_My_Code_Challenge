@@ -10,13 +10,11 @@ class square():
     area_of_my_square: calculate area of square
     PerimeterOfMySquare: find perimeter
     """
+    width = 0
+    height = 0
 
     def __init__(self, *args, **kwargs):
         """Set values for instances"""
-
-        self.width = 0
-        self.height = 0
-
         for key, value in kwargs.items():
             setattr(self, key, value)
 
