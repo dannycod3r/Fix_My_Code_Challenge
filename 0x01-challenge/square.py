@@ -1,8 +1,18 @@
 #!/usr/bin/python3
+"""Module contains the Square class
+"""
+
 
 class square():
+    """Square class
+
+    Methods:
+    area_of_my_square: calculate area of square
+    PerimeterOfMySquare: find perimeter
+    """
 
     def __init__(self, *args, **kwargs):
+        """Set values for instances"""
 
         self.width = 0
         self.height = 0
@@ -15,9 +25,11 @@ class square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
+        """Perimeter of Square"""
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """Informal repressentation of the square object"""
         return "{}/{}".format(self.width, self.height)
 
 
